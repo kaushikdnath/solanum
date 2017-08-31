@@ -1,0 +1,359 @@
+@import url(navi.css);
+@import url(forms.css);
+@import url(tables.css);
+
+body{
+	margin:0;
+	padding:0;
+	font-size:13px;
+	font-family:calibri, "Times New Roman", Times, serif;
+	color:black;
+	background-color:#161616;
+	}
+canvas{position:relative;
+	margin:0 auto 0;
+	display:block;
+	}
+img{margin:0; padding:0; border:none;}
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{list-style-type:none; margin:0; padding:0;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
+.clear{display:inline-block;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+.imgl, .imgr{border:1px solid #DFDFDF; padding:4px;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{
+	display:block;
+	width:100%;
+	margin:0;
+	text-align:left;
+	padding-top:25px;
+	}
+
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6{
+	margin:0 0 15px 0;
+	padding:0;
+	font-size:20px;
+	font-weight:normal;
+	line-height:normal;
+	}
+
+.col1{color:#FFFFFF; background-color:#161616; padding-bottom:50px;}
+.col2{color:#9B9B9B; background-color:#F9F9F9;}
+
+/* ----------------------------------------------Generalise-------------------------------------*/
+
+#header, #topbar, #container, #footer, #copyright{
+	position:relative;
+	margin:0 auto 0;
+	display:block;
+	width:960px;
+	}
+
+/* ----------------------------------------------Header-------------------------------------*/
+
+#header{
+	padding:25px 0 25px;
+	width:960px;
+	}
+
+#header h1, #header p, #header ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	line-height:normal;
+	}
+
+#header h1 a{
+	font-size:46px;
+	color:#CCCCCC;
+	background-color:#161616;
+	}
+
+/* ----------------------------------------------TopBar-------------------------------------*/
+
+#topbar{
+	height:40px;
+	padding:4px 0 0;
+	z-index:1000;
+	}
+
+/* ----------------------------------------------Content-------------------------------------*/
+
+#container{
+	padding:0px 0;
+	}
+
+#container a{
+	color:#0BBDB3;
+	background-color:#F9F9F9;
+	}
+
+#contentlft{
+	display:block;
+	float:left;
+	width:620px;
+	border-right:1px dotted black;
+	}
+#contentrt{
+    display:block;
+    float:right;
+    width: 330px;
+    }
+#tab{
+	display:block;
+	margin:auto;
+	width:150px;
+	height:460px;
+	padding-left:50px;
+	font-size:17px;
+	overflow-x:hidden;
+	}
+
+/* ------Tabs-----*/
+
+#tabcontainer{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	}
+
+#tabcontainer ul#tabnav{
+	display:block;
+	height:28px;
+	margin:0;
+	padding:12px 0 0 15px;
+	list-style:none;
+	text-transform:uppercase;
+	font-size:12px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	background:url("../images/bar_gradient.png") top left repeat-x;
+	}
+
+#tabcontainer ul#tabnav li{
+	display:inline;
+	margin:0 30px 0 0;
+	padding:0;
+	}
+	
+/* ----------------------------------------------Column-------------------------------------*/
+
+#column{
+	display:block;
+	float:right;
+	width:300px;
+	}
+
+#column .holder, #column #featured{
+	display:block;
+	width:300px;
+	margin-bottom:20px;
+	}
+
+#column .holder h2.title{
+	display:block;
+	width:100%;
+	height:65px;
+	margin:0;
+	padding:15px 0 0 0;
+	font-size:20px;
+	line-height:normal;
+	border-bottom:1px dotted #999999;
+	}
+
+#column .holder h2.title img{
+	float:left;
+	margin:-15px 8px 0 0;
+	padding:5px;
+	border:1px solid #999999;
+	}
+
+#column div.imgholder{
+	display:block;
+	width:290px;
+	margin:0 0 10px 0;
+	padding:4px;
+	border:1px solid #CCCCCC;
+	}
+
+#column .holder p.readmore{
+	display:block;
+	width:100%;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+	}
+	
+/* Featured Block */
+
+#column #featured ul, #column #featured h2, #column #featured p{
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#666666;
+	background-color:#F9F9F9;
+	}
+
+#column #featured a{
+	color:#0BBDB2;
+	background-color:#F9F9F9;
+	}
+
+#column #featured li{
+	display:block;
+	width:250px;
+	margin:0;
+	padding:20px 25px;
+	color:#666666;
+	background-color:#F9F9F9;
+	}
+
+#column #featured li p.imgholder{
+	display:block;
+	width:240px;
+	height:90px;
+	margin:20px 0 15px 0;
+	padding:4px;
+	border:1px solid #CCCCCC;
+	}
+
+#column #featured li h2{
+	margin:0;
+	padding:0 0 8px 0;
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	line-height:normal;
+	border-bottom:1px dotted #999999;
+	}
+
+#column #featured p.readmore{
+	display:block;
+	width:100%;
+	margin-top:15px;
+	font-weight:bold;
+	text-align:right;
+	line-height:normal;
+	}
+
+#column .latestnews{
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+#column .latestnews li{
+	display:block;
+	width:100%;
+	height:99px;
+	margin:0 0 11px 0;
+	padding:0 0 21px 0;
+	border-bottom:1px dotted #C7C5C8;
+	overflow:hidden;
+	}
+
+#column .latestnews li.last{
+	margin-bottom:0;
+	}
+
+#column .latestnews p{
+	display:inline;
+	}
+
+#column .latestnews img{
+	float:left;
+	margin:0 10px 0 0;
+	padding:4px;
+	border:1px solid #C7C5C8;
+	clear:left;
+	}
+
+/* ----------------------------------------------Footer-------------------------------------*/
+
+#footer{
+	padding:20px 0;
+	}
+
+#footer h2, #footer p, #footer ul, #footer a{
+	margin:0;
+	padding:0;
+	font-weight:normal;
+	list-style:none;
+	line-height:1.6em;
+	font-style:normal;
+	}
+
+#footer, #footer a{
+	color:#666666;
+	background-color:#161616;
+	}
+
+#footer .footbox{
+	display:block;
+	float:left;
+	width:225px;
+	margin:0 20px 0 0;
+	padding:0;
+	}
+
+#footer h2{
+	margin-bottom:20px;
+	font-size:26px;
+	font-style:italic;
+	}
+
+#footer p{
+	margin-bottom:10px;
+	}
+
+#footer li{
+	margin:0 0 5px 0;
+	padding:0 0 5px 0;
+	border-bottom:1px solid #333333;
+	}
+
+#footer li strong.title{
+	font-size:12px;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+
+#footer .last{
+	margin:0;
+	}
+
+/* ----------------------------------------------
+right-------------------------------------*/
+
+#copyright{
+	padding:15px 0;
+	border-top:1px solid #333333;
+	}
+
+#copyright p{
+	margin:0;
+	padding:0;
+	}
+
+#copyright, #copyright a{
+	color:#2B2B2B;
+	//background-color:#161616;
+	text-align:center;
+	}

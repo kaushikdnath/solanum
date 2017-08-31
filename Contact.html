@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+<head >
+<title>Mining for DNA motifs in Tomato | Query</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+
+<script type="text/javascript">
+    function valid()
+    {
+        var value = document.getElementById('value');
+        var Text = value.value;
+
+  if(Text)
+  {
+    var nam=document.getElementById('nam');
+    var Text=nam.value;
+    if(!Text){
+       alert("Type your name!");
+       return false;
+    }
+  }
+  
+    }
+</script>
+
+</head>
+<body id="top" style="background:url(images/backgrnd_full.png) top">
+<div id="strfld" class="wrapper col1" style="position:absolute;background:url(images/topbar.png) top left repeat-x;padding-top:0px;">
+</div>
+  <div id="header" class="clear" style="background:url(images/header.png) top left;height:100px"></div>
+  <div id="topbar" class="clear">
+    <ul id="topnav">
+      <li ><a href="index.html">Home</a></li>
+      <li><a href="QueryInput_1.html">Query</a></li>
+      <li class="active"><a href="Contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<script src="scripts/starfield.js"></script>
+  <script>
+    var container = document.getElementById('strfld');
+    var starfield = new Starfield();
+    starfield.initialise(container);
+    starfield.start();
+  </script>
+<!-- ####################################################################################################### -->
+<div class="wrapper ">
+  <div id="container" class="clear" style="font-size:17px">
+		<div id="contentlft" style="border-right:0;">
+    <form method="post" action="./cgi-bin/saveContact.cgi" onsubmit="return valid(this)">
+    <table>
+		<tr><td>Enter your name ::</td><td align="left"><input id="nam" name="nam" type="text" style="width:450px;"/></td></tr>
+		<tr><td>Enter your Email ::</td><td align="left"><input name="email" type="text" style="width:450px;"/></td></tr>
+		<tr><td>Write Something::</td><td align="left"><textarea  id="value" cols="0" rows="0" name="value"></textarea></td></tr>
+		<tr><td align="right" colspan="2"><input type="submit" value="Submit"></td></tr>
+    </table>
+		</div>
+    <div id="contentrt" style="border-right:0;" align="center">
+  <a href="./cgi-bin/Contact/Contact.txt">See all previous comments</a>
+  </div>
+	</form>
+  </div>
+
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+	<p>Copyright &copy; 2013 - All Rights Reserved - <a href="http://www.anthonys.ac.in">Bio-technology Department, St.Anthony's College | www.anthonys.ac.in</a> </p>
+	<p>Developed by Kaushik Deb Nath(kdebnath56@gmail.com)</p>
+  </div>
+</div>
+</body>
+</html>

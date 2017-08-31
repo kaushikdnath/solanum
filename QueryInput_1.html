@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Mining for DNA motifs in Tomato | Query</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript">
+    function Checkfiles()
+    {
+        var fup = document.getElementById('filename');
+        var fileName = fup.value;
+		var re = /(\.txt)$/i;
+		if(!re.exec(fileName))
+		{
+			alert("File extension not supported or no file is provided!");
+			return false;
+		}
+	
+    }
+</script>
+</head>
+<body id="top" style="background:url(images/backgrnd_full.png) top">
+<div id="strfld" class="wrapper col1" style="position:absolute;background:url(images/topbar.png) top left repeat-x;padding-top:0px;">
+</div>  
+  <div id="header" class="clear" style="background:url(images/header.png) top left;height:100px"></div>
+  <div id="topbar" class="clear">
+    <ul id="topnav">
+      <li ><a href="index.html">Home</a></li>
+      <li class="active"><a href="QueryInput_1.html">Query</a></li>    
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<script src="scripts/starfield.js"></script>
+	<script>
+		var container = document.getElementById('strfld');
+			var starfield = new Starfield();
+		starfield.initialise(container);
+		starfield.start();
+	</script>
+<div class="wrapper ">
+  <div id="container" class="clear" style="font-size:17px;width:650px">
+	<form method="post" action="upload.cgi" enctype="multipart/form-data" onsubmit="return Checkfiles(this)">
+		<table class="darkBorder">
+			<tr>
+				<td class="dark"></td><td class="dark" align="center"><input type="file" #file="" name="file1" id="filename" size="50" style="width:310px;"></td>
+			</tr>
+			<tr>
+				<td class="dark"></td><td class="dark" align="center"><input type="file" #file="" name="file2" id="filename" size="50" style="width:310px;"></td>
+			</tr>
+		</table>
+	<p style="font-size:10pt;color:red;">Note: Please provide a file with '.txt' extention only</p>
+	<div class="fl_right" >
+		<input type="submit" value=">>>" style="width:80px;height:30px;">
+	</div>	
+	</form>
+  </div>
+</div><div class="wrapper">
+  <div id="copyright" class="clear">
+	<p>Copyright &copy; 2013 - All Rights Reserved - <a href="http://www.anthonys.ac.in">Bio-technology Department, St.Anthony's College | www.anthonys.ac.in</a> </p>
+	<p>Developed by Kaushik Deb Nath(kdebnath56@gmail.com)</p>
+  </div>
+</div>
+</body>
+</html>

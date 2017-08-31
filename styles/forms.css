@@ -1,0 +1,89 @@
+form, fieldset, legend{
+	margin:0;
+	padding:0;
+	border:none;
+	}
+
+legend{
+	display:none;
+	}
+
+input, textarea, select{
+	font-size:12px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+textarea{
+    width: 440px;  
+	height: 120px; 
+	padding: 8px; 
+    }
+/*-----------------------------------------------Button------------------------------------------*/
+
+.button
+{
+padding:8px 10px 8px 10px;
+transition:0.5s all ease;
+-webkit-transition:0.2s all ease;/*for Chrome and Safari*/
+-o-transition:0.2s all ease;/*For Opera*/
+-ms-transition:0.2s all ease;/*For I.E.*/
+-moz-transition:0.2s all ease;/*For Mozilla*/
+opacity:0.9;
+border:none;
+}
+.button.red
+{
+background-color:#d9522c;
+border-left:4px solid #d9522c;
+color:white;
+
+}
+.button.green
+{
+background-color:#009900;
+color:white;
+border-left:4px solid #009900;
+}
+.button:hover
+{
+opacity:1;
+border-left:4px solid white;
+cursor:pointer;
+}
+.button:active
+{
+color:white;
+background-color:#191919;
+}
+/* ----------------------------------------------Forms in Content Area-------------------------------------*/
+
+#container #respond{
+	display:block;
+	width:100%;
+	}
+
+#container #respond input{
+	width:170px;
+	padding:2px;
+	border:1px solid #CCCCCC;
+	margin:5px 5px 0 0;
+	}
+
+#container #respond textarea{
+	width:98%;
+	border:1px solid #CCCCCC;
+	padding:2px;
+	overflow:auto;
+	}
+
+#container #respond p{
+	margin:5px 0;
+	}
+
+#container #respond #submit, #container #respond #reset{
+	margin:0;
+	padding:5px;
+	color:#666666;
+	background-color:#F7F7F7;
+	border:1px solid #CCCCCC;
+	cursor:pointer;
+	}
